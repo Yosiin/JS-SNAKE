@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/*
+* Variables
+----------------------------------------------*/
+/*---- Primary-color ---*/
+/*----default color----*/
+/*
+* Mixins
+----------------------------------------------*/
+/* ===== Usage ===== */
+/*
+
+h1 {
+    font-size: 10px;
+  
+    @include tablet {
+      font-size: 12px;
+    }
+  
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+
+*/
+/*
+* Global settings
+--------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+a {
+  text-decoration: none;
+  color: #212529; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+input, textarea, button {
+  border: none;
+  outline: none;
+  background: none; }
+
+/* Farba označenia */
+::selection {
+  background: #1d3848;
+  color: #F7F6EE;
+  text-shadow: none; }
+
+/*Scroll bar*/
+body::-webkit-scrollbar {
+  width: 0.85em; }
+
+body::-webkit-scrollbar-track {
+  background: #F7F6EE; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e2e1da;
+  border-radius: 6px;
+  border: 1px solid #F7F6EE; }
+
+body {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 1.6em;
+  color: #183342;
+  background: #aab7bb;
+  -webkit-font-smoothing: antialiased; }
+
+img,
+video {
+  max-width: 100%;
+  height: auto; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #e2e1da;
+  margin: 0px; }
+
+h1, h2 {
+  margin: 0.5em 0em 1em; }
+
+h3, h4 {
+  margin: 0.5em 0em 0.75em; }
+
+h5, h6 {
+  margin: 0.5em 0em; }
+
+small {
+  font-size: 1.1em;
+  font-weight: 800;
+  color: #e2e1da; }
+
+span {
+  font-size: 0.85;
+  color: #e2e1da; }
+
+a {
+  font-weight: 600;
+  color: #252525;
+  text-decoration: none;
+  transition: 0.3s; }
+
+
+.global-header {
+  position: relative;
+  width: 100%;
+  height: 4.5em;
+  background-color: #f5f7f3; }
+  .global-header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; }
+  .global-header .global-list {
+    display: flex;
+    flex-direction: row; }
+    .global-header .global-list li {
+      margin-left: 25px; }
+    .global-header .global-list a {
+      text-transform: capitalize; }
+
+.logo {
+  margin: 0; }
+  .logo a {
+    color: #bc585e;
+    border-bottom: none; }
+
+/*
+* Media queries
+------------------------------------*/
+
+/*# sourceMappingURL=style.css.map */
+
+.content {
+  margin-top: 100px;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.badge-left  {
+  font-size: 36px;
+  color: #dadada;
+
+  background: darkcyan;
+  
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+
+}
+
+.badge-right h5 {
+  font-size: 20px;
+  color: darkcyan;
+  font-weight: 500;
+  width: 250px;
+  height: 75px;
+  line-height: 75px;
+  background: #dadada;
+  padding: 0 10px;
+  border-radius: 0 8px 8px 0;
+  text-align: center;
+}
+
+.slider {
+  margin-bottom: 100px;
+}
+
+.myslider {
+  width: 100%;
+  height: 8px;
+  background: rgba(184, 135, 11, 0.493);
+  border: 2px solid darkgoldenrod;
+  border-radius: 4px;
+
+  position: relative;
+  text-align: left;
+
+  margin-bottom: 50px;
+}
+
+.myslider span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+
+  cursor: pointer;
+
+  width: 16px;
+  height: 16px;
+  background: darkgrey;
+  border: 2px solid teal;
+  border-radius: 3px;
+}
+
+
+
+.browser,
+.user {
+  position: relative;
+  
+  width: 25%;
+  margin: auto;
+}
+
+.browser {
+  background-color: #1d3848;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.user {
+  background-color: #481d31;
+  border-radius: 12px;
+}
+
+.browser li,
+.user li {
+  list-style-type:square;
+  text-indent: -20px;
+  margin-left: 30px;
+  color: antiquewhite;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+}

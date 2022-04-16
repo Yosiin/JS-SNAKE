@@ -1,0 +1,87 @@
+/*
+* Global settings
+--------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+a {
+  text-decoration: none;
+  color: #212529; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+input, textarea, button {
+  border: none;
+  outline: none;
+  background: none; }
+
+/* Farba označenia */
+::selection {
+  background: #1d3848;
+  color: #F7F6EE;
+  text-shadow: none; }
+
+/*Scroll bar*/
+body::-webkit-scrollbar {
+  width: 0.85em; }
+
+body::-webkit-scrollbar-track {
+  background: #F7F6EE; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e2e1da;
+  border-radius: 6px;
+  border: 1px solid #F7F6EE; }
+
+body {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 1.6em;
+  color: #183342;
+  background: #d3dfd4;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+canvas {
+  background-color: #66903f;
+  outline:5px solid #b48451;
+}
+
+.score {
+  margin: 0 auto;
+  display: block;
+  max-width: 10%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.75em;
+  margin-top: 30px;
+  border: 3px solid #b48451;
+  border-radius: 4px;
+}
+
+:root {
+  --game-bg-col: #66903f;
+  --bg-col: #b8bb25;
+  --grid: #1e5363;
+  --food: #dc5e47;
+}
